@@ -31,7 +31,7 @@
                             <td>{{$row->id}}</td>
                             <td>{{$row->name}}</td>
                             <td class="text-right">
-                                <a class="btn btn-sm btn-primary" href="/[[folder]]/[[modelPlural]]/{{$row->id}}">
+                                <a class="btn btn-sm btn-primary" href="/[[folder]]/[model_name_as_plural_snake]/{{$row->id}}">
                                     {{__('Edit')}}
                                 </a>
                             </td>
