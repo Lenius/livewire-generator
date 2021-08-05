@@ -19,7 +19,6 @@ You can then export the configuration:
 
 ```bash
 php artisan vendor:publish --provider="Lenius\LivewireGenerator\LivewireGeneratorServiceProvider" --tag="config"
-php artisan vendor:publish --provider="Lenius\LivewireGenerator\LivewireGeneratorServiceProvider" --tag="views"
 ```
 
 ## Testing
