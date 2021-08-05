@@ -21,12 +21,6 @@ class LivewireGeneratorServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__ . '/../config/livewire-generator.php' => config_path('livewire-generator.php'),
             ], 'config');
-
-            $this->publishes([
-                __DIR__ . '/../resources/views' => resource_path('views/vendor/livewire-generator'),
-            ], 'views');
         };
-
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'livewire-generator');
     }
 }

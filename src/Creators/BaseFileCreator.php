@@ -58,7 +58,7 @@ abstract class BaseFileCreator implements FileCreatorContract
     protected function handleCreateFile()
     {
         File::ensureDirectoryExists($this->main_destination_folder, 0755, true);
-        $file = File::put($this->destination_file_name, $this->content);
+        File::put($this->destination_file_name, $this->content);
 
         $this->infos[] = "File {$this->destination_file_name} has been created!";
     }

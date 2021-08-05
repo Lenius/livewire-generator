@@ -63,7 +63,7 @@ class TestCase extends TestbenchTestCase
     protected function deleteFilesRecursevely(string $dir): bool
     {
         if (is_dir($dir)) {
-            $files = array_diff(scandir($dir), array('.', '..'));
+            $files = array_diff(scandir($dir), ['.', '..']);
 
             foreach ($files as $file) {
                 (is_dir("$dir/$file")) ? $this->deleteFilesRecursevely("$dir/$file") : unlink("$dir/$file");

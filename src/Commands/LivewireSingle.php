@@ -19,24 +19,9 @@ class LivewireSingle extends Command
         {--preset=bootstrap : Frontend scafold preset!}
         {--models-dir=App\Models : Here you can specify your models directory}';
 
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
     protected $description = 'Create a livewire component';
-    /**
-     * The name of the model to be used
-     *
-     * @var string
-     */
-    protected $modelName;
 
-    /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
+    protected $modelName;
 
     protected $generators = [
         'bootstrap' => \Lenius\LivewireGenerator\Generators\Bootstrap::class,
@@ -47,11 +32,6 @@ class LivewireSingle extends Command
         parent::__construct();
     }
 
-    /**
-     * Execute the console command.
-     *
-     * @return int
-     */
     public function handle()
     {
         $this->handleArguments();
@@ -78,11 +58,7 @@ class LivewireSingle extends Command
 
         return 0;
     }
-    /**
-     * Handle the arguments and assign them as variables
-     *
-     * @return Command
-     */
+
     protected function handleArguments()
     {
         $this->modelName = Str::studly($this->argument('model'));

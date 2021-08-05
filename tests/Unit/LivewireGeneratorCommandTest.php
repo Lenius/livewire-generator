@@ -12,6 +12,8 @@ class LivewireGeneratorCommandTest extends TestCase
     {
         $this->expectException(MissingModelException::class);
 
+        $this->artisan('make:livewire-single', ['model' => 'model']);
+
         $command = $this->artisan('make:livewire-single', ['model' => null])
             ->expectsQuestion('Enter Model Name', null);
     }
