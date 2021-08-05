@@ -1,10 +1,7 @@
 <?php
 $finder = PhpCsFixer\Finder::create()
-    ->exclude('bootstrap/')
-    ->exclude('public/')
-    ->exclude('resources/')
     ->exclude('vendor/')
-    ->exclude('storage/')
+    ->exclude('stubs/')
     ->in(__DIR__)
 ;
 $config = new PhpCsFixer\Config();
