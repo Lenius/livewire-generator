@@ -1,5 +1,5 @@
 
-# Livewire generator
+# Livewire generator (BETA)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lenius/livewire-generator.svg?style=flat-square)](https://packagist.org/packages/lenius/laravel-ecommerce)
 [![Build Status](https://travis-ci.org/lenius/livewire-generator.svg)](https://travis-ci.org/lenius/livewire-generator)
@@ -18,8 +18,8 @@ composer require lenius/livewire-generator
 You can then export the configuration:
 
 ```bash
-php artisan vendor:publish --provider="Lenius\LaravelEcommerce\EcommerceServiceProvider" --tag="config"
-php artisan vendor:publish --provider="Lenius\LaravelEcommerce\EcommerceServiceProvider" --tag="views"
+php artisan vendor:publish --provider="Lenius\LivewireGenerator\LivewireGeneratorServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Lenius\LivewireGenerator\LivewireGeneratorServiceProvider" --tag="views"
 ```
 
 ## Testing
